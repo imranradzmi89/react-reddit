@@ -1,9 +1,18 @@
 import React, {useState, useEffect} from 'react'
 import Article from './components/Article'
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+  crossorigin="anonymous"
+/>
+
 function App() {
+  //hook for array of posts
   const [articles,setArticles] = useState([])
   const [subreddit, setSubreddit] = useState(['webdev'])
+  //default of 10 posts 
   const [visible,setVisible] = useState(10)
 
 const showMoreArticles = () => {
